@@ -1,0 +1,24 @@
+# API Settings
+SECRET_KEY=your-secret-key-here
+ACCESS_TOKEN_EXPIRE_MINUTES=30
+
+# Database (Optional - for future use)
+DATABASE_URL=postgresql://user:password@localhost/dbname
+
+# Vector Database (Pinecone)
+PINECONE_API_KEY=your-pinecone-api-key
+PINECONE_ENVIRONMENT=us-east-1us-east-1
+PINECONE_INDEX_NAME=rag-system
+
+# LLM Settings (Perplexity is preferred, OpenAI is optional)
+OPENAI_API_KEY=your-openai-api-key
+PERPLEXITY_API_KEY=your-perplexity-api-key
+
+# RAG Settings
+CHUNK_SIZE=1000
+CHUNK_OVERLAP=200
+TOP_K_RESULTS=5
+
+# Model Settings
+EMBEDDING_MODEL=sentence-transformers/all-MiniLM-L6-v2
+LLM_MODEL=gpt-3.5-turbo 
